@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* light cyan gradient */
+  margin: 0;
+  padding: 0;
+  color: #004d40; /* dark teal for good contrast on light background */
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1.blue-title {
+  background: linear-gradient(to right, #0288d1, #26c6da); /* bright blue/cyan gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #00796b; /* tealish */
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.upload-label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #0288d1; /* strong blue */
+}
+
+input[type="file"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #ffffffcc; /* translucent white */
+  border: 1px solid #26c6da; /* bright cyan border */
+  border-radius: 8px;
+  color: #004d40;
+}
+
+#imagePreview {
+  max-width: 100%;
+  margin-top: 20px;
+  display: none;
+  border-radius: 12px;
+  border: 2px solid #26c6da;
+  box-shadow: 0 0 15px rgba(38, 198, 218, 0.5);
+}
+
+#submitBtn {
+  padding: 12px 24px;
+  font-size: 1em;
+  background-color: #26c6da; /* bright cyan */
+  color: #004d40; /* dark teal text */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #0288d1; /* darker blue on hover */
+  color: #e0f7fa; /* light text on hover */
+}
+
+#output {
+  margin-top: 25px;
+  font-size: 1.1em;
+  color: #004d40;
+}
+
+.top-nav {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.top-nav a {
+  color: #26c6da;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.about-section {
+  margin: 40px auto;
+  padding: 30px 20px;
+  max-width: 90%;
+  background: #e0f7fa; /* very light cyan background */
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 150, 136, 0.15);
+  color: #004d40;
+  text-align: center;
+}
+
+.blue-subtitle {
+  color: #0288d1;
+  font-size: 1.7em;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #00695c;
+}
