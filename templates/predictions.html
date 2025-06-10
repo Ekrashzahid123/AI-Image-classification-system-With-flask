@@ -1,0 +1,6 @@
+<h2>Your Predictions</h2>
+<ul>
+  {% for p in predictions %}
+    <li>{{ p.timestamp }} | {{ p.label }} | {{ p.probability }} | {{ p.image_filename }}</li>
+  {% endfor %}
+</ul>
