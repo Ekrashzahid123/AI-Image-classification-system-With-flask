@@ -117,3 +117,51 @@ input[type="file"] {
   margin: 0 auto;
   color: #00695c;
 }
+
+/* --- Auth Pages (Login & Register) --- */
+
+.auth-box {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 25px;
+  background-color: #ffffffcc; /* translucent white */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 150, 136, 0.2);
+}
+
+.auth-box input[type="text"],
+.auth-box input[type="email"],
+.auth-box input[type="password"] {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #26c6da;
+  border-radius: 10px;
+  font-size: 1em;
+  color: #004d40;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  background-color: #26c6da;
+  color: #004d40;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: #0288d1;
+  color: #e0f7fa;
+}
+
+.auth-link {
+  margin-top: 15px;
+  display: block;
+  color: #0288d1;
+  text-decoration: none;
+  font-weight: bold;
+}

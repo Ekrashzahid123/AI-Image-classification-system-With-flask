@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login | AI Image Classifier</title>
+  <title>Register | AI Image Classifier</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <div class="container">
     <div class="auth-box">
-      <h2 class="blue-subtitle">🔐 Login</h2>
+      <h2 class="blue-subtitle">📝 Register</h2>
 
       {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -21,12 +21,13 @@
       {% endwith %}
 
       <form method="POST">
+        <input type="text" name="name" placeholder="Full Name" required><br>
         <input type="email" name="email" placeholder="Email" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
       </form>
 
-      <a href="{{ url_for('auth.register') }}" class="auth-link">Don't have an account? Register</a>
+      <a href="{{ url_for('auth.login') }}" class="auth-link">Already have an account? Login</a>
     </div>
   </div>
 </body>
